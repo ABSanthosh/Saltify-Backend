@@ -1,0 +1,15 @@
+{
+  "name": "saltify",
+  "version": "1.0.0",
+  "description": "API for delivering songs based of spotify uri ",
+  "main": "index.js",
+  "author": "Santhosh",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "fastify": "^4.0.0"
+  }
+}
