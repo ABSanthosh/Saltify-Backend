@@ -4,12 +4,17 @@
   "description": "API for delivering songs based of spotify uri ",
   "main": "index.js",
   "author": "Santhosh",
+  "type": "module",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js --trace-warnings"
   },
   "dependencies": {
-    "fastify": "^4.0.0"
+    "fastify": "^4.0.0",
+    "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
