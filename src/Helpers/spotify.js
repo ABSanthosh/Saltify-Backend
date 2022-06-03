@@ -30,6 +30,7 @@ class Spotify {
       artist: Data.artists.map((artist) => artist.name),
       image: Data.album.images[0].url,
       preview: Data.preview_url,
+      duration: Data.duration_ms,
       color: Data.dominantColor,
     };
 
