@@ -1,1 +1,1 @@
-{"id":"8836d478-062c-4da9-b881-f882406d3305","space":18953,"runtime":"nodejs14.x","name":"saltify","path":"eg0ft7","project":"a0k0qt04","account":"144798365827","region":"eu-central-1","deps":["fastify@^4.0.0"],"envs":null,"public":true,"log_level":"debug","cron":""}
+{"id":"8836d478-062c-4da9-b881-f882406d3305","space":18953,"runtime":"nodejs14.x","name":"saltify","path":"eg0ft7","project":"a0k0qt04","account":"144798365827","region":"eu-central-1","deps":["fastify@^4.0.0","node-html-parser@^5.3.3","node-fetch@^3.2.6"],"envs":null,"public":true,"log_level":"debug","cron":""}
