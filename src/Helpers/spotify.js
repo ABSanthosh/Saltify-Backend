@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 class Spotify {
   constructor(URI, type) {
@@ -53,4 +53,4 @@ class Spotify {
   }
 }
 
-export default Spotify;
+module.exports = Spotify;
