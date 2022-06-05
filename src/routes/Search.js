@@ -1,7 +1,7 @@
-import Spotify from "../Helpers/spotify.js";
-import Youtube from "../Helpers/youtube.js";
+const Spotify = require("../Helpers/spotify.js");
+const Youtube = require("../Helpers/youtube.js");
 
-export default async function Search(app, options) {
+async function Search(app, options) {
   app.get("/search/:uri", async (req, res) => {
     const uri = req.params.uri;
     const spotify = new Spotify(uri, "track");
@@ -15,3 +15,5 @@ export default async function Search(app, options) {
     res.send(youtubeData);
   });
 }
+
+module.exports = Search;
