@@ -1,6 +1,6 @@
-import Spotify from "../Helpers/spotify.js";
+const Spotify = require("../Helpers/spotify");
 
-export default async function FullMetadata(app, options) {
+async function FullMetadata(app, options) {
   app.get("/full/:type/:uri", async (req, res) => {
     const uri = req.params.uri;
     const type = req.params.type;
@@ -13,3 +13,5 @@ export default async function FullMetadata(app, options) {
     res.send(response);
   });
 }
+
+module.exports = FullMetadata;
