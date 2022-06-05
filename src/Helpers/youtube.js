@@ -1,9 +1,8 @@
-import fetch from "node-fetch";
-import { parse } from "node-html-parser";
+const fetch = require("node-fetch");
+const { parse } = require("node-html-parser");
 
-export default class Youtube {
+class Youtube {
   constructor(query) {
-    // ("Ben & Jerry" "salem ilese") youtube lyrics
     this.query = query;
     this.BaseUrl = `https://www.google.com/search?q=${encodeURI(
       query
@@ -26,3 +25,5 @@ export default class Youtube {
     else return "Not found";
   }
 }
+
+module.exports = Youtube;
