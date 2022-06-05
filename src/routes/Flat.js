@@ -1,6 +1,6 @@
-import Spotify from "../Helpers/spotify.js";
+const Spotify = require("../Helpers/spotify");
 
-export default async function FlatMetadata(app, options) {
+async function FlatMetadata(app, options) {
   app.get("/flat/:type/:uri", async (req, res) => {
     const uri = req.params.uri;
     const type = req.params.type;
@@ -13,3 +13,5 @@ export default async function FlatMetadata(app, options) {
     res.send(response);
   });
 }
+
+module.exports = FlatMetadata;
